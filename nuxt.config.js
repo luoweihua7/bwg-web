@@ -57,7 +57,10 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+      //
     }
-  }
+  },
+  serverMiddleware: [
+    '~/api/bandwagon'
+  ]
 }
