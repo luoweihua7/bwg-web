@@ -1,6 +1,6 @@
 <template>
   <div class="client-wrapper">
-    <section class="client" v-for="item in infos" :key="item.name">
+    <section class="client" v-for="item in items" :key="item.name">
       <h1 class="client__name">{{item.name}}</h1>
       <div class="progress-bar">
         <div class="progress-bar__mask" :style="{width: item.progress + '%'}"></div>
@@ -16,7 +16,7 @@
 <script>
   export default {
     name: 'Items',
-    props: ['infos'],
+    props: ['items'],
     data() {
       return {}
     },
